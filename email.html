@@ -39,9 +39,18 @@
         }        
         
         @media screen and (max-width: 600px){
-            tr{
-                text-align: left;
-                
+
+            table {
+                border: 1px solid green;
+                border-collapse: collapse;
+                width:100%;
+            }
+
+            table td.shrink {
+                white-space:nowrap
+            }
+            table td.expand {
+                width: 99%
             }
         }
     </style>
