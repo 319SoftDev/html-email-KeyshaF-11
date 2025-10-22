@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Email</title>
     <style type="text/css">
 
@@ -13,7 +13,7 @@
             font-size: 16px;
             line-height: 1.5;
             color: #000000;
-            background-color: #7c7b7b;
+
         }
         table {
             border-collapse: collapse;
@@ -31,38 +31,49 @@
             outline: none;
             text-decoration: none;
             -ms-interpolation-mode: bicubic;
+            display: block;
+            margin: auto;
+            width: 90%;
+            border-radius: 59px;
         }
-        p{
-            position: relative;
-            top: 30px;
-            left: 100px;
-        }        
+        div {
+
+            background-color: #2b376d;
+            height: 100px;
+            border-radius: 100PX;
+            overflow: auto;
+        }
+        h2{
+            font-family: ;
+        }
         
-        @media screen and (max-width: 600px){
-
-            table {
-                border: 1px solid green;
-                border-collapse: collapse;
-                width:100%;
+        @media only screen and (max-width: 600px){
+            .content{
+                width: 100% !important;
+                font-size: 14px !important;
+                padding: 10px !important;
+                right: 39px;
             }
-
-            table td.shrink {
-                white-space:nowrap
-            }
-            table td.expand {
-                width: 99%
+            img{
+                width: 100%;
+                border-radius: 59px;
             }
         }
     </style>
 </head>
 <body>
-    <table width="100%" height= 1000px cellpadding="0" cellspacing="0" border="0">
+    <table role="presentation" style="width:100%; border-collapse:collapse; background-color:#5b8bcb" >
         <tr>
             <td align="center" style="padding: 20px 0;">
-                <table width="70%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0f0f1; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <table role="presentation" class="content" style="width:100%; max-width:600px; background-color:#cce5ff; margin:auto; border-collapse:collapse;">
                     <tr>
                         <td style="padding: 40px 30px;">
-                            <h1 style="margin-top: 0; font-size: 24px; color: #363131; text-align: center;">Simple HTML email</h1>
+                            <h1 style="margin-top: 0; font-size: 24px; color: #363131; text-align: center;">Happy Birthday!</h1>
+                            <img src=https://www.cloudcodepro.com/NYCFAB25/user15/workspace/img/Screenshot%202025-10-22%20094916.png alt="Happy 18th Birthday"><br><br><br><br>
+                            <div>
+                                <h2 style="color: aliceblue; text-align: center;">List of things you can do when you turn 18</h2>
+                            
+                            </div>
                             <p style="margin-bottom: 20px;">Hello,</p>
                             <p style="margin-bottom: 20px;">This is a simple, plain HTML email template. Later you can cutomize YAY!</p>
                             <p style="margin-bottom: 20px;">I'll take this design and structure as a reference for my project</p>
@@ -72,8 +83,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="padding: 20px 30px; background-color: #f0f0f0; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
-                            <p style="margin: 39px; font-size: 12px; color: #333232; left: 4px;">&copy; Keysha Fuentes </p>
+                        <td align="center" style="padding: 20px 30px; background-color: #cce5ff;">
+                            <p style="margin: 39px; font-size: 12px; color: #1b1b1b; left: 4px;">&copy; Keysha Fuentes </p>
                         </td>
                     </tr>
                 </table>
@@ -81,6 +92,7 @@
             </td>
         </tr>
     </table>
-    
+
 </body>
 </html>
+
